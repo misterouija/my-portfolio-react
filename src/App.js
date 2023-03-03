@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+
+//import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/style.css';
+import Homepage from './components/Homepage';
 
 function App() {
-    return (
-        <div className='App'>
-            <header className='App-header'>
-                <img src={logo} className='App-logo' alt='logo' />
-                <h1 className='fs-1'>Leighton Grant's Portfolio</h1>
-                <a
-                    className='App-link'
-                    href='https://reactjs.org'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+    return <Homepage />;
 }
 
 export default App;
