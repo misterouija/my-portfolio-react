@@ -1,4 +1,3 @@
-//import './style.css';
 const Footer = () => {
     return (
         <footer className='mt-auto text-white-50'>

@@ -1,4 +1,3 @@
-//import './style.css';
 const Hero = () => {
     return (
         <main className='px-3'>
