@@ -6,19 +6,18 @@ import 'aos/dist/aos.css';
 function About() {
     useEffect(() => {
         AOS.init();
-        AOS.refresh();
     }, []);
     return (
-        <section className='about-page'>
-            <div className='container'>
-                <div
-                    className='container'
-                    data-aos='zoom-in'
-                    data-aos-delay='100'
-                >
+        <section
+            className='about-page py-5'
+            data-aos='fade-up'
+            data-aos-delay='200'
+        >
+            <div className=''>
+                <div className='container my-5'>
                     <div className='row'>
                         <div className='col'>
-                            <h2 className='title about-title text-center'>
+                            <h2 className='title about-title text-center my-5'>
                                 About
                             </h2>
                             <p className='intro about-intro text-center'>
@@ -32,7 +31,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className='container'>
+                <div className='container my-5'>
                     <div className='row'>
                         <div className='col col-md-4 about-img'>
                             <img
@@ -53,7 +52,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className='container'>
+                <div className='container my-5'>
                     <div className='row'>
                         <div className='col'>
                             <h2 className='title about-title text-center'>

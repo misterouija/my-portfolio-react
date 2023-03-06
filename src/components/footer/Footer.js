@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer id='footer' className='bg bg-light'>
+        <footer id='footer' className='bg bg-light py-3'>
             <div className='container d-flex justify-content-center align-items-center'>
                 <div className='copyright'>
                     © Copyright 2023

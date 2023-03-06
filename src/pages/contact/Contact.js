@@ -1,12 +1,30 @@
 import './Contact.css';
-import { MdEmail, MdPhoneIphone } from 'react-icons/md';
+import {
+    BsEnvelopeFill,
+    BsPhoneFill,
+    BsFilePdfFill,
+    BsLinkedin,
+    BsGithub,
+} from 'react-icons/bs';
+import AOS from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import ContactForm from '../../components/contactform/ContactForm';
+
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <section className='contact-page min-vh-100'>
-            <div className='container'>
+        <section
+            className='contact-page py-5'
+            data-aos='fade-up'
+            data-aos-delay='300'
+        >
+            <div className='container my-5'>
                 <div className='row'>
                     <div className='col'>
-                        <h2 className='title contact-title text-center'>
+                        <h2 className='title contact-title text-center my-5'>
                             Contact Me
                         </h2>
                         <p className='intro contacts-intro text-center'>
@@ -19,13 +37,21 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='container'>
+                <div className='container my-5'>
+                    <div className='row row-cols-1'>
+                        <div className='col'>
+                            <ContactForm />
+                        </div>
+                    </div>
+                </div>
+
+                <div className='container my-5'>
                     <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-between'>
                         <div className='col'>
                             <div className='card py-3 '>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
-                                        <MdEmail />
+                                        <BsEnvelopeFill />
                                     </span>
                                     <h6 className='card-title'>EMAIL</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
@@ -39,13 +65,11 @@ const Contact = () => {
                             <div className='card py-3 '>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
-                                        <MdPhoneIphone />
+                                        <BsPhoneFill />
                                     </span>
                                     <h6 className='card-title'>PHONE</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
-                                    <p className='card-text'>
-                                        oneal.grant@outlook.com
-                                    </p>
+                                    <p className='card-text'>07886028826</p>
                                 </div>
                             </div>
                         </div>
@@ -53,15 +77,31 @@ const Contact = () => {
                             <div className='card py-3 '>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
-                                        <MdEmail />
+                                        <BsFilePdfFill />
                                     </span>
-                                    <h6 className='card-title'>EMAIL</h6>
+                                    <h6 className='card-title'>MY CV</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
-                                    <p className='card-text'>
-                                        oneal.grant@outlook.com
-                                    </p>
+                                    <p className='card-text'>Leighton's CV</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='container my-5'>
+                    <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-center align-items-center'>
+                        <div className='col social-links  d-flex gap-4 justify-content-center align-items-center'>
+                            <a href='github'>
+                                <BsGithub />
+                            </a>
+                            <a href='linkedin'>
+                                <BsLinkedin />
+                            </a>
+                            <a href='email'>
+                                <BsEnvelopeFill />
+                            </a>
+                            <a href='phone'>
+                                <BsPhoneFill />
+                            </a>
                         </div>
                     </div>
                 </div>

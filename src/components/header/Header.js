@@ -20,7 +20,7 @@ const Header = () => {
                         className='collapse navbar-collapse flex-grow-0'
                         id='navbarNavAltMarkup'
                     >
-                        <div className='navbar-nav'>
+                        <div className='navbar-nav fs-6 fw-bold gap-4'>
                             <a
                                 className='nav-link active'
                                 aria-current='page'

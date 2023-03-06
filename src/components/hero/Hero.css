@@ -1,6 +1,6 @@
 #hero {
-    background-image: url('https://cdn.pixabay.com/photo/2018/01/11/21/27/laptop-3076957_960_720.jpg');
+    background-image: url('../../assets/hero-background.jpg');
     background-position: center;
     background-size: cover;
-    background-color: rgb(207, 117, 7);
+    background-color: rgb(232, 215, 195);
 }
