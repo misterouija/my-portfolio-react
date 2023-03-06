@@ -1,4 +1,5 @@
 import './Contact.css';
+import { MdEmail, MdPhoneIphone } from 'react-icons/md';
 const Contact = () => {
     return (
         <section className='contact-page min-vh-100'>
@@ -19,18 +20,48 @@ const Contact = () => {
                 </div>
 
                 <div className='container'>
-                    <div className='row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3 d-flex justify-content-between'>
-                        <div className='col d-flex justify-content-center align-items-center flex-column'>
-                            <p className=''>Lorem ipsum</p>
+                    <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-between'>
+                        <div className='col'>
+                            <div className='card py-3 '>
+                                <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
+                                    <span className='fs-4'>
+                                        <MdEmail />
+                                    </span>
+                                    <h6 className='card-title'>EMAIL</h6>
+                                    <div className='border border-top-3 border-secondary w-50'></div>
+                                    <p className='card-text'>
+                                        oneal.grant@outlook.com
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col d-flex justify-content-center align-items-center flex-column'>
-                            <p className=''>Lorem ipsum</p>
+                        <div className='col'>
+                            <div className='card py-3 '>
+                                <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
+                                    <span className='fs-4'>
+                                        <MdPhoneIphone />
+                                    </span>
+                                    <h6 className='card-title'>PHONE</h6>
+                                    <div className='border border-top-3 border-secondary w-50'></div>
+                                    <p className='card-text'>
+                                        oneal.grant@outlook.com
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col d-flex justify-content-center align-items-center flex-column'>
-                            <p className=''>Lorem ipsum</p>
-                        </div>
-                        <div className='col d-flex justify-content-center align-items-center flex-column'>
-                            <p className=''>Lorem ipsum</p>
+                        <div className='col'>
+                            <div className='card py-3 '>
+                                <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
+                                    <span className='fs-4'>
+                                        <MdEmail />
+                                    </span>
+                                    <h6 className='card-title'>EMAIL</h6>
+                                    <div className='border border-top-3 border-secondary w-50'></div>
+                                    <p className='card-text'>
+                                        oneal.grant@outlook.com
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

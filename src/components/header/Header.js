@@ -1,3 +1,10 @@
+// Icons
+import {
+    BsLinkedin,
+    BsGithub,
+    BsPhoneFill,
+    BsEnvelopeFill,
+} from 'react-icons/bs';
 const Header = () => {
     return (
         <header className=''>
@@ -34,9 +41,19 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <div className='social-links d-inline-flex gap-1'>
-                            <a href='github'>github</a>
-                            <a href='linkedin'>linkedin</a>
+                        <div className='social-links  d-inline-flex gap-2'>
+                            <a href='github'>
+                                <BsGithub />
+                            </a>
+                            <a href='linkedin'>
+                                <BsLinkedin />
+                            </a>
+                            <a href='email'>
+                                <BsEnvelopeFill />
+                            </a>
+                            <a href='phone'>
+                                <BsPhoneFill />
+                            </a>
                         </div>
 
                         <button
