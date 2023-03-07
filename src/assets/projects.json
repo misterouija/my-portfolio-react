@@ -1,14 +1,14 @@
 [
     {
         "title": "Console Finances",
-        "image": "https://github.com/misterouija/Console-Finances/raw/main/images/Screenshot.png",
-        "description": "A JavaScript Quip App",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/console-finances-ss.jpg",
+        "description": "A Financial Analyzer App",
         "url": "https://misterouija.github.io/Javascript-Quiz/",
         "repo": "https://github.com/misterouija/Javascript-Quiz"
     },
     {
         "title": "Weather Dashboard",
-        "image": "https://github.com/misterouija/Weather-Dashboard/raw/main/assets/images/screenshot.jpeg",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/weather-dashboard-ss.jpg",
         "description": "A Weather Dashboard App",
         "url": "https://misterouija.github.io/Weather-Dashboard/",
         "repo": "https://github.com/misterouija/Weather-Dashboard"

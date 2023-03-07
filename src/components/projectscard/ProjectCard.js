@@ -5,9 +5,9 @@ function ProjectCard(props) {
             <div className='card text-light'>
                 <img src={props.image} className='card-img' alt={props.title} />
 
-                <div className='card-img-overlay d-flex justify-content-center align-items-center flex-column'>
+                <div className='card-img-overlay d-flex justify-content-end align-items-center flex-column'>
                     <h5 className='card-title'>{props.title}</h5>
-                    <p className='card-text'>{props.description}</p>
+                    {/* <p className='card-text'>{props.description}</p> */}
                     <a
                         href={props.url}
                         className='btn btn-secondary rounded-pill d-inline-block px-3'
