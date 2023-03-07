@@ -1,6 +1,8 @@
 // Icons
 import { TiThMenu } from 'react-icons/ti';
 import { Social } from '../social/Social';
+import { LinkContainer } from 'react-router-bootstrap';
+
 const Header = () => {
     return (
         <header className=''>
@@ -17,22 +19,31 @@ const Header = () => {
                         id='navbarNavAltMarkup'
                     >
                         <div className='navbar-nav fs-6 fw-bold gap-md-4 NavLinks'>
-                            <a
-                                className='nav-link'
-                                aria-current='page'
-                                href='/'
-                            >
-                                Home
-                            </a>
-                            <a className='nav-link' href='/about'>
-                                About
-                            </a>
-                            <a className='nav-link' href='/projects'>
-                                Projects
-                            </a>
-                            <a className='nav-link' href='/contact'>
-                                Contact
-                            </a>
+                            <LinkContainer to='/'>
+                                <a
+                                    className='nav-link'
+                                    aria-current='page'
+                                    href='/'
+                                >
+                                    Home
+                                </a>
+                            </LinkContainer>
+                            <LinkContainer to='/about'>
+                                <a className='nav-link' href='/about'>
+                                    About
+                                </a>
+                            </LinkContainer>
+
+                            <LinkContainer to='/projects'>
+                                <a className='nav-link' href='/projects'>
+                                    Projects
+                                </a>
+                            </LinkContainer>
+                            <LinkContainer to='/contact'>
+                                <a className='nav-link' href='/contact'>
+                                    Contact
+                                </a>
+                            </LinkContainer>
                         </div>
                     </div>
                     <Social />
