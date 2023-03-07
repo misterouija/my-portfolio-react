@@ -15,23 +15,37 @@
     },
     {
         "title": "Javascript Quiz",
-        "image": "https://github.com/misterouija/Javascript-Quiz/raw/main/assets/images/screenshot.png",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/javascript-quiz-ss.jpg",
         "description": "A JavaScript Quip App",
         "url": "https://misterouija.github.io/Javascript-Quiz/",
         "repo": "https://github.com/misterouija/Javascript-Quiz"
     },
     {
         "title": "Password Generator",
-        "image": "https://github.com/misterouija/Password-Generator/raw/main/images/screenshot.jpeg",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/password-generator-ss.jpg",
         "description": "An app to generate a random password based on user criteria",
         "url": "https://misterouija.github.io/Password-Generator/",
         "repo": "https://github.com/misterouija/Password-Generator"
     },
     {
         "title": "Workday Scheduler",
-        "image": "https://github.com/misterouija/Workday-Scheduler/raw/main/images/screenshot.jpeg",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/workday-scheduler-ss.jpg",
         "description": "A Workday Scheduler App",
         "url": "https://misterouija.github.io/Workday-Scheduler/",
         "repo": "https://github.com/misterouija/Workday-Scheduler"
+    },
+    {
+        "title": "Team Generator",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/team-profile-generator-ss.jpg",
+        "description": "A Team Profile Generator App",
+        "url": "https://misterouija.github.io/team-profile-generator/",
+        "repo": "https://github.com/misterouija/team-profile-generator"
+    },
+    {
+        "title": "The Mixologist",
+        "image": "https://raw.githubusercontent.com/misterouija/my-portfolio-react/main/src/assets/the-mixologist-ss.jpg",
+        "description": "A Cocktail Finder App",
+        "url": "https://misterouija.github.io/the-mixologist/",
+        "repo": "https://github.com/misterouija/the-mixologist"
     }
 ]

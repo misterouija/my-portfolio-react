@@ -2,6 +2,7 @@ import './About.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+import profile from '../../assets/profile.jpg';
 
 function About() {
     useEffect(() => {
@@ -36,8 +37,8 @@ function About() {
                         <div className='col col-md-4 about-img'>
                             <img
                                 className='img-responsive'
-                                src='https://dummyimage.com/400x400/eee/0011ff.jpg'
-                                alt='about'
+                                src={profile}
+                                alt='leighton grant'
                             />
                         </div>
 

@@ -1,6 +1,8 @@
+.project-card {
+    position: relative;
+}
 .card-img-overlay {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 0;
-    bottom: 0 !important;
-    height: 30%;
+    height: 50%;
 }
