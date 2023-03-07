@@ -1,0 +1,10 @@
+.contact-page {
+    min-height: calc(100vh - 56px);
+}
+.contact-social a {
+    font-size: 2em;
+}
+
+.contact-social a {
+    margin-left: 35px;
+}

@@ -36,3 +36,10 @@
         transform: rotate(360deg);
     }
 }
+
+.NavLinks a {
+    color: #4a4e69 !important;
+}
+.NavLinks a:hover {
+    color: #9a8c98 !important;
+}

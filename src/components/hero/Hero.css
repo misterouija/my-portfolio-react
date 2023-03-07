@@ -1,0 +1,21 @@
+#hero {
+    background-image: url('../../assets/hero-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(232, 215, 195);
+    min-height: calc(100vh - 56px);
+}
+#hero h1 {
+    color: #22223b;
+    font-size: 3.5em !important;
+}
+
+.HeroButton {
+    color: #fff;
+    background-color: #22223b;
+}
+
+.HeroButton:hover {
+    color: #fff;
+    background-color: #4a4e69;
+}
