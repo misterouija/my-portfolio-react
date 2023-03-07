@@ -1,4 +1,5 @@
 import React from 'react';
+import './ContactForm.css';
 const ContactForm = () => {
     const [formStatus, setFormStatus] = React.useState('Send');
     const onSubmit = (e) => {
@@ -45,7 +46,7 @@ const ContactForm = () => {
                     <textarea className='form-control' id='message' required />
                 </div>
                 <button
-                    className='btn form-btn rounded-pill px-4'
+                    className='btn form-btn rounded-pill px-4 my-4'
                     type='submit'
                 >
                     {formStatus + ' Message'}

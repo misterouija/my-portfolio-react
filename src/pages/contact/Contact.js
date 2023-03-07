@@ -28,12 +28,11 @@ const Contact = () => {
                         <h2 className='title contact-title text-center my-5'>
                             Contact Me
                         </h2>
-                        <p className='intro contacts-intro text-center'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
+                        <p className='intro contacts-intro text-center fs-5'>
+                            If you are interested in working with me or have any
+                            questions, please feel free to contact me using the
+                            form or any of the other options below. I look
+                            forward to hearing from you soon!
                         </p>
                     </div>
                 </div>

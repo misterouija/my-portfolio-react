@@ -36,12 +36,9 @@ const Projects = () => {
                         <h2 className='title projects-title text-center my-5'>
                             Projects
                         </h2>
-                        <p className='intro projects-intro text-center'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
+                        <p className='intro projects-intro text-center fs-5'>
+                            Please take a look at at some of the projects I've
+                            done over the last few months.
                         </p>
                     </div>
                 </div>

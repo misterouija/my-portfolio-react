@@ -7,7 +7,6 @@ const Footer = () => {
                     <strong>
                         <span> Leighton Grant</span>
                     </strong>
-                    . All Rights Reserved
                 </div>
             </div>
         </footer>
