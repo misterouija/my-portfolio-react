@@ -13,8 +13,8 @@ const ContactForm = () => {
         console.log(conFom);
     };
     return (
-        <div className='container my-5'>
-            <h2 className='mb-3'>React Contact Form Component Example</h2>
+        <div className='container my-5 border p-5 rounded'>
+            <h5 className='mb-3'>Contact Form</h5>
             <form onSubmit={onSubmit}>
                 <div className='mb-3'>
                     <label className='form-label' htmlFor='name'>
@@ -44,8 +44,11 @@ const ContactForm = () => {
                     </label>
                     <textarea className='form-control' id='message' required />
                 </div>
-                <button className='btn btn-danger' type='submit'>
-                    {formStatus}
+                <button
+                    className='btn form-btn rounded-pill px-4'
+                    type='submit'
+                >
+                    {formStatus + ' Message'}
                 </button>
             </form>
         </div>

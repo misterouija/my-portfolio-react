@@ -1,6 +1,7 @@
 // Icons
 import { TiThMenu } from 'react-icons/ti';
 import { Social } from '../social/Social';
+import Logo from '../../assets/lg-logo.png';
 const Header = () => {
     return (
         <header className=''>
@@ -8,7 +9,7 @@ const Header = () => {
                 <div className='container-fluid d-flex justify-content-between align-items-center'>
                     <div>
                         <a className='navbar-brand' href='/'>
-                            Navbar
+                            <img src={Logo} alt='logo' />
                         </a>
                     </div>
 

@@ -22,12 +22,9 @@ function About() {
                                 About
                             </h2>
                             <p className='intro about-intro text-center'>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                I am a frontend developer with over five years
+                                of experience in creating responsive and
+                                user-friendly websites and web applications.
                             </p>
                         </div>
                     </div>
@@ -43,12 +40,27 @@ function About() {
                         </div>
 
                         <div className='col col-md-8 about-info'>
-                            <h3>Frontend Web Developer</h3>
+                            <h3>Front-end Web Developer</h3>
                             <p>
-                                do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                I am a newly qualified front-end developer
+                                residing in the UK and excited to join a company
+                                that has an innovative and supportive spirit.
+                                Trained through the Harvard and MIT-created
+                                course provider, EdX, I have acquired a range of
+                                skills that will set the tone for my career in
+                                front-end development. Prior to acquiring my
+                                professional qualification, I had undertaken
+                                personal coding projects for over 5 years in my
+                                spare time. So, why coding? Making the decision
+                                to switch careers came because I relocated from
+                                London to Lincolnshire, having previously worked
+                                as an electronics technician for many years.
+                                Solving problems using code is a great passion
+                                of mine and armed with a cup of coffee, I am
+                                keen to delve into the realm of professional
+                                problem-solving. Supplied with the eagerness to
+                                pursue front-end development professionally, I
+                                am ready for the next chapter in my career.
                             </p>
                         </div>
                     </div>
@@ -60,12 +72,14 @@ function About() {
                                 Skills
                             </h2>
                             <p className='intro skills-intro text-center'>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                I have a strong knowledge of HTML, CSS,
+                                JavaScript, React, Bootstrap and other web
+                                technologies. I enjoy working with diverse teams
+                                and collaborating with other developers to
+                                deliver high-quality products that meet the
+                                client's needs and expectations. I am always
+                                eager to learn new skills and explore new
+                                challenges in the field of web development.
                             </p>
                         </div>
                     </div>

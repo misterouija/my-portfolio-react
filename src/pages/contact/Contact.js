@@ -40,7 +40,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='container my-5'>
+                <div className='container my-5 contact-info'>
                     <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-between'>
                         <div className='col'>
                             <div className='card py-3 '>
@@ -51,7 +51,9 @@ const Contact = () => {
                                     <h6 className='card-title'>EMAIL</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
                                     <p className='card-text'>
-                                        oneal.grant@outlook.com
+                                        <a href='mailto:oneal.grant@outlook.com'>
+                                            oneal.grant@outlook.com
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -64,7 +66,11 @@ const Contact = () => {
                                     </span>
                                     <h6 className='card-title'>PHONE</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
-                                    <p className='card-text'>07886028826</p>
+                                    <p className='card-text'>
+                                        <a href='tel:07886028826'>
+                                            +447886028826
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -85,8 +91,12 @@ const Contact = () => {
                 <div className='container my-5'>
                     <div className='row'>
                         <div className='col d-flex justify-content-center gap-3'>
-                            <LinkedIn />
-                            <GitHub />
+                            <span className='social-buttons'>
+                                <LinkedIn />
+                            </span>
+                            <span className='social-buttons'>
+                                <GitHub />
+                            </span>
                         </div>
                     </div>
                 </div>

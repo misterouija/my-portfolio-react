@@ -1,5 +1,9 @@
 .contact-page {
     min-height: calc(100vh - 56px);
+    background-image: url('../../assets/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #f2e9e4;
 }
 .contact-social a {
     font-size: 2em;
@@ -7,4 +11,24 @@
 
 .contact-social a {
     margin-left: 35px;
+}
+.contact-info {
+    color: #4a4e69;
+}
+.social-buttons {
+    font-size: 2em;
+    background-color: #22223b;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.contact-info .card {
+    border: none;
+    border-bottom: 10px solid #22223b;
+    border-radius: 5px;
 }
