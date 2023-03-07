@@ -1,5 +1,5 @@
 .contact-page {
-    margin: auto;
+    min-height: calc(100vh - 56px);
 }
 .contact-social a {
     font-size: 2em;
