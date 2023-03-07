@@ -1,5 +1,6 @@
 import './ProjectCard.css';
 import { RiExternalLinkFill } from 'react-icons/ri';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function ProjectCard(props) {
     return (
@@ -29,12 +30,14 @@ function ProjectCard(props) {
                     >
                         Repo <RiExternalLinkFill />
                     </a>
-                    <a
-                        href={'projects/' + props.title}
-                        className='btn btn-sm btn-secondary ms-2'
-                    >
-                        Details
-                    </a>
+                    <LinkContainer to={props.title}>
+                        <a
+                            href={'projects/' + props.title}
+                            className='btn btn-sm btn-secondary ms-2'
+                        >
+                            Details
+                        </a>
+                    </LinkContainer>
                 </div>
             </div>
         </div>
