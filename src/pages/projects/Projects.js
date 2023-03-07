@@ -1,7 +1,7 @@
 import './Projects.css';
 // Projects
 import projects from '../../assets/projects.json';
-import ProjectCard from '../../components/projectscard/ProjectCard';
+import { ProjectCard } from '../../components/projectscard/ProjectCard';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
@@ -14,10 +14,11 @@ const Projects = () => {
         return (
             <ProjectCard
                 title={project.title}
-                image={project.image}
-                description={project.description}
+                img={project.img}
+                sdesc={project.sdesc}
+                desc={project.desc}
                 url={project.url}
-                github={project.github}
+                repo={project.repo}
                 key={index}
             />
         );

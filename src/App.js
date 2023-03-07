@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 // Routes
 import { Route, Routes } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
+import ProjectDetails from './pages/projects/ProjectDetails';
 
 // Components
 import Footer from './components/footer/Footer';
@@ -23,9 +24,10 @@ function App() {
             <Header />
             <Routes>
                 <Route path='/' element={<Hero />} />
-                <Route path='about' element={<About />} />
-                <Route path='projects' element={<Projects />} />
-                <Route path='contact' element={<Contact />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/projects/:id' element={<ProjectDetails />} />
             </Routes>
             <Footer />
         </>

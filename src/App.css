@@ -36,3 +36,7 @@
         transform: rotate(360deg);
     }
 }
+
+.NavLinks a {
+    color: red !important;
+}

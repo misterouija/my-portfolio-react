@@ -16,21 +16,21 @@ const Header = () => {
                         className='collapse navbar-collapse flex-grow-0'
                         id='navbarNavAltMarkup'
                     >
-                        <div className='navbar-nav fs-6 fw-bold gap-md-4'>
+                        <div className='navbar-nav fs-6 fw-bold gap-md-4 NavLinks'>
                             <a
-                                className='nav-link active'
+                                className='nav-link'
                                 aria-current='page'
                                 href='/'
                             >
                                 Home
                             </a>
-                            <a className='nav-link' href='about'>
+                            <a className='nav-link' href='/about'>
                                 About
                             </a>
-                            <a className='nav-link' href='projects'>
+                            <a className='nav-link' href='/projects'>
                                 Projects
                             </a>
-                            <a className='nav-link' href='contact'>
+                            <a className='nav-link' href='/contact'>
                                 Contact
                             </a>
                         </div>
@@ -46,7 +46,6 @@ const Header = () => {
                         aria-label='Toggle navigation'
                     >
                         <TiThMenu />
-                        {/*<span className='navbar-toggler-icon'></span> */}
                     </button>
                 </div>
             </nav>
