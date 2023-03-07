@@ -14,7 +14,7 @@ const Hero = () => {
     return (
         <section id='hero' className='d-flex align-items-center'>
             <div
-                className='container d-flex flex-column align-items-center'
+                className='container d-flex flex-column align-items-center hero-info'
                 data-aos='zoom-in'
                 data-aos-delay='200'
             >
