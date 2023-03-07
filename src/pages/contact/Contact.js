@@ -1,15 +1,10 @@
 import './Contact.css';
-import {
-    BsEnvelopeFill,
-    BsPhoneFill,
-    BsFilePdfFill,
-    BsLinkedin,
-    BsGithub,
-} from 'react-icons/bs';
+import { BsEnvelopeFill, BsPhoneFill, BsFilePdfFill } from 'react-icons/bs';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import ContactForm from '../../components/contactform/ContactForm';
+import { GitHub, LinkedIn } from '../../components/social/Social';
 
 const Contact = () => {
     useEffect(() => {
@@ -88,20 +83,10 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='container my-5'>
-                    <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-center align-items-center'>
-                        <div className='col social-links  d-flex gap-4 justify-content-center align-items-center'>
-                            <a href='github'>
-                                <BsGithub />
-                            </a>
-                            <a href='linkedin'>
-                                <BsLinkedin />
-                            </a>
-                            <a href='email'>
-                                <BsEnvelopeFill />
-                            </a>
-                            <a href='phone'>
-                                <BsPhoneFill />
-                            </a>
+                    <div className='row'>
+                        <div className='col d-flex justify-content-center gap-3'>
+                            <LinkedIn />
+                            <GitHub />
                         </div>
                     </div>
                 </div>

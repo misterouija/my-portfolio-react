@@ -1,10 +1,6 @@
 // Icons
-import {
-    BsLinkedin,
-    BsGithub,
-    BsPhoneFill,
-    BsEnvelopeFill,
-} from 'react-icons/bs';
+import { TiThMenu } from 'react-icons/ti';
+import { Social } from '../social/Social';
 const Header = () => {
     return (
         <header className=''>
@@ -20,7 +16,7 @@ const Header = () => {
                         className='collapse navbar-collapse flex-grow-0'
                         id='navbarNavAltMarkup'
                     >
-                        <div className='navbar-nav fs-6 fw-bold gap-4'>
+                        <div className='navbar-nav fs-6 fw-bold gap-md-4'>
                             <a
                                 className='nav-link active'
                                 aria-current='page'
@@ -39,35 +35,19 @@ const Header = () => {
                             </a>
                         </div>
                     </div>
-
-                    <div>
-                        <div className='social-links  d-inline-flex gap-2'>
-                            <a href='github'>
-                                <BsGithub />
-                            </a>
-                            <a href='linkedin'>
-                                <BsLinkedin />
-                            </a>
-                            <a href='email'>
-                                <BsEnvelopeFill />
-                            </a>
-                            <a href='phone'>
-                                <BsPhoneFill />
-                            </a>
-                        </div>
-
-                        <button
-                            className='navbar-toggler'
-                            type='button'
-                            data-bs-toggle='collapse'
-                            data-bs-target='#navbarNavAltMarkup'
-                            aria-controls='navbarNavAltMarkup'
-                            aria-expanded='false'
-                            aria-label='Toggle navigation'
-                        >
-                            <span className='navbar-toggler-icon'></span>
-                        </button>
-                    </div>
+                    <Social />
+                    <button
+                        className='navbar-toggler'
+                        // type='button'
+                        data-bs-toggle='collapse'
+                        data-bs-target='#navbarNavAltMarkup'
+                        aria-controls='navbarNavAltMarkup'
+                        aria-expanded='false'
+                        aria-label='Toggle navigation'
+                    >
+                        <TiThMenu />
+                        {/*<span className='navbar-toggler-icon'></span> */}
+                    </button>
                 </div>
             </nav>
         </header>
