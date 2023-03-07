@@ -1,10 +1,16 @@
 import './Contact.css';
-import { BsEnvelopeFill, BsPhoneFill, BsFilePdfFill } from 'react-icons/bs';
+import {
+    BsEnvelopeFill,
+    BsPhoneFill,
+    BsFilePdfFill,
+    BsDownload,
+} from 'react-icons/bs';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import ContactForm from '../../components/contactform/ContactForm';
 import { GitHub, LinkedIn } from '../../components/social/Social';
+import Cv from '../../assets/leighton-cv.pdf';
 
 const Contact = () => {
     useEffect(() => {
@@ -51,7 +57,10 @@ const Contact = () => {
                                     <h6 className='card-title'>EMAIL</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
                                     <p className='card-text'>
-                                        <a href='mailto:oneal.grant@outlook.com'>
+                                        <a
+                                            href='mailto:oneal.grant@outlook.com'
+                                            style={{ textDecoration: 'none' }}
+                                        >
                                             oneal.grant@outlook.com
                                         </a>
                                     </p>
@@ -67,7 +76,10 @@ const Contact = () => {
                                     <h6 className='card-title'>PHONE</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
                                     <p className='card-text'>
-                                        <a href='tel:07886028826'>
+                                        <a
+                                            href='tel:07886028826'
+                                            style={{ textDecoration: 'none' }}
+                                        >
                                             +447886028826
                                         </a>
                                     </p>
@@ -82,7 +94,15 @@ const Contact = () => {
                                     </span>
                                     <h6 className='card-title'>MY CV</h6>
                                     <div className='border border-top-3 border-secondary w-50'></div>
-                                    <p className='card-text'>Leighton's CV</p>
+                                    <p className='card-text'>
+                                        <a
+                                            href={Cv}
+                                            download
+                                            style={{ textDecoration: 'none' }}
+                                        >
+                                            Leighton's CV <BsDownload />
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
