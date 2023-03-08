@@ -11,9 +11,11 @@ const Header = () => {
             <nav className='navbar navbar-expand-lg bg-light fixed-top py-3 shadow'>
                 <div className='container-fluid d-flex justify-content-between align-items-center'>
                     <div>
-                        <a className='navbar-brand' href='/'>
-                            <img src={Logo} alt='logo' />
-                        </a>
+                        <LinkContainer to='/'>
+                            <a className='navbar-brand' href='/'>
+                                <img src={Logo} alt='logo' />
+                            </a>
+                        </LinkContainer>
                     </div>
 
                     <div

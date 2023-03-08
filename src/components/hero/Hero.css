@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     min-height: calc(100vh - 56px);
-    padding: 10px;
+    padding: 20px;
 }
 #hero h1 {
     color: #22223b;

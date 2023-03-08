@@ -3,6 +3,7 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import { LinkContainer } from 'react-router-bootstrap';
+import ProfilePhoto from '../../assets/profile.jpg';
 
 //AOS.init();
 
@@ -19,6 +20,12 @@ const Hero = () => {
                 data-aos='zoom-in'
                 data-aos-delay='200'
             >
+                <img
+                    src={ProfilePhoto}
+                    alt='Leighton Grant'
+                    className='img-fluid rounded-circle img-thumbnail'
+                    style={{ width: '100px' }}
+                />
                 <h1 className='fw-bold my-2 fs-1'>Leighton Grant</h1>
                 <h2 className='fs-4 fw-light my-2'>Front-End Web Developer</h2>
                 <LinkContainer to='/about'>
