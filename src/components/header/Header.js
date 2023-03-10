@@ -22,7 +22,7 @@ const Header = () => {
                         className='collapse navbar-collapse flex-grow-0'
                         id='navbarNavAltMarkup'
                     >
-                        <div className='navbar-nav fs-6 fw-bold gap-md-4 NavLinks'>
+                        <div className='navbar-nav fs-6 fw-bold gap-lg-3 NavLinks'>
                             <LinkContainer to='/'>
                                 <a
                                     className='nav-link'
@@ -52,7 +52,7 @@ const Header = () => {
                     <Social />
                     <button
                         className='navbar-toggler'
-                        // type='button'
+                        type='button'
                         data-bs-toggle='collapse'
                         data-bs-target='#navbarNavAltMarkup'
                         aria-controls='navbarNavAltMarkup'
