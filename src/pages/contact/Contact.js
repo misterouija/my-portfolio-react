@@ -34,6 +34,7 @@ const Contact = () => {
                             form or any of the other options below. I look
                             forward to hearing from you soon!
                         </p>
+                        <hr className='bg bg-light' />
                     </div>
                 </div>
 

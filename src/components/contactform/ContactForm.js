@@ -1,29 +1,30 @@
-import React from 'react';
+import { useState } from 'react';
 import './ContactForm.css';
-import { ThanksMessage } from '../modals/Thanks';
 
 const ContactForm = () => {
-    const [formStatus, setFormStatus] = React.useState('Send');
+    const [formStatus, setFormStatus] = useState('Send Message');
 
     const onSubmit = (e) => {
         e.preventDefault();
-        setFormStatus('Submitting...');
         const { name, email, message } = e.target.elements;
-        // let conFom = {
-        //     name: name.value,
-        //     email: email.value,
-        //     message: message.value,
-        // };
+        let formData = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
 
-        <ThanksMessage name={name.value} />;
-
-        //const mdl = document.getElementById('thanksModal');
-        // const mdl = new Modal(document.getElementById('thanksModal'), {
-        //     keyboard: false,
-        // });
-        // mdl.show();
-
-        //console.log(conFom);
+        alert(
+            'Thanks for you message ' +
+                formData.name +
+                ". I'll get back to you as soon as possible"
+        );
+        name.value = '';
+        email.value = '';
+        message.value = '';
+        setFormStatus('Message sent');
+        setTimeout(() => {
+            setFormStatus('Send Message');
+        }, 1000);
     };
 
     return (
@@ -61,8 +62,10 @@ const ContactForm = () => {
                 <button
                     className='btn form-btn rounded-pill px-4 my-4'
                     type='submit'
+                    // data-bs-toggle='modal'
+                    // data-bs-target='#thanksModal'
                 >
-                    {formStatus + ' Message'}
+                    {formStatus}
                 </button>
             </form>
         </div>

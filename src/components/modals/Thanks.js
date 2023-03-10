@@ -1,9 +1,9 @@
 function ThanksMessage(props) {
     console.log(props);
-    return <p>{props.name}</p>;
+    return <p className='text-light fs-1'>Your name is: {props.name}</p>;
 }
 
-function Thanks(props) {
+function Thanks() {
     //console.log('props');
     return (
         <div
