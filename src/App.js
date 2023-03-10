@@ -1,6 +1,5 @@
 //import logo from './logo.svg';
 import './App.css';
-import { Thanks } from './components/modals/Thanks';
 // Routes
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,6 +17,7 @@ import ProjectDetails from './pages/projects/ProjectDetails';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import { Thanks } from './components/modals/Thanks';
 
 function App() {
     return (
