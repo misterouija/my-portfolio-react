@@ -26,7 +26,7 @@ const Projects = () => {
 
     return (
         <section
-            className='projects-page py-5'
+            className='projects-page py-5 bg-gradient'
             data-aos='fade-up'
             data-aos-delay='300'
         >
@@ -40,11 +40,12 @@ const Projects = () => {
                             Please take a look at at some of the projects I've
                             done over the last few months.
                         </p>
+                        <hr />
                     </div>
                 </div>
             </div>
             <div className='container my-5'>
-                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 d-flex justify-content-center'>
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 d-flex justify-content-center my-projects'>
                     {myProjects}
                 </div>
             </div>

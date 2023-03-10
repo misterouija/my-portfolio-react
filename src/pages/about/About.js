@@ -10,7 +10,7 @@ function About() {
     }, []);
     return (
         <section
-            className='about-page py-5'
+            className='about-page py-5 bg-gradient'
             data-aos='fade-up'
             data-aos-delay='200'
         >
@@ -26,22 +26,23 @@ function About() {
                                 residing in the UK and excited to join a company
                                 that has an innovative and supportive spirit.
                             </p>
+                            <hr />
                         </div>
                     </div>
                 </div>
                 <div className='container my-5'>
                     <div className='row'>
-                        <div className='col col-md-4 about-img'>
+                        <div className='col-12 col-md-3 about-img'>
                             <img
-                                className='img-responsive'
+                                className='img-fluid'
                                 src={profile}
                                 alt='leighton grant'
                             />
                         </div>
 
-                        <div className='col col-md-8 about-info'>
+                        <div className='col-12 col-md-9 about-info mt-5 mt-md-0'>
                             <h3>Front-end Web Developer</h3>
-                            <p className='fs-5'>
+                            <p className='lead fs-5'>
                                 Trained through the Harvard and MIT-created
                                 course provider, EdX, I have acquired a range of
                                 skills that will set the tone for my career in

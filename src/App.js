@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import { Thanks } from './components/modals/Thanks';
 // Routes
 import { Route, Routes } from 'react-router-dom';
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path='/projects/:id' element={<ProjectDetails />} />
                 <Route path='/' element={<Hero />} />
             </Routes>
+            <Thanks />
             <Footer />
         </>
     );
