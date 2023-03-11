@@ -14,7 +14,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id='hero' className='d-flex align-items-center'>
+        <section id='hero' className='d-flex align-items-center mt-5'>
             <div
                 className='container d-flex flex-column align-items-center hero-info'
                 data-aos='zoom-in'
@@ -26,8 +26,12 @@ const Hero = () => {
                     className='img-fluid rounded-circle img-thumbnail'
                     style={{ width: '100px' }}
                 />
-                <h1 className='fw-bold my-2 fs-1'>Leighton Grant</h1>
-                <h2 className='fs-4 fw-light my-2'>Front-End Web Developer</h2>
+                <h1 className='fw-bold my-2 fs-1 text-center'>
+                    Leighton Grant
+                </h1>
+                <h2 className='fs-4 fw-light my-2 text-center'>
+                    Front-End Web Developer
+                </h2>
                 <LinkContainer to='/about'>
                     <a
                         href='/about'

@@ -8,7 +8,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header className='header'>
-            <nav className='navbar navbar-expand-lg bg-light fixed-top py-3 shadow'>
+            <nav className='navbar navbar-expand-lg bg-light fixed-top py-3 px-2 shadow'>
                 <div className='container-fluid d-flex justify-content-between align-items-center'>
                     <div>
                         <LinkContainer to='/'>
@@ -32,7 +32,7 @@ const Header = () => {
                                     Home
                                 </a>
                             </LinkContainer>
-                            <LinkContainer to='/projects'>
+                            <LinkContainer to='/projects' data-bs-toggle='show'>
                                 <a className='nav-link' href='/projects'>
                                     Projects
                                 </a>
@@ -49,6 +49,7 @@ const Header = () => {
                             </LinkContainer>
                         </div>
                     </div>
+
                     <Social />
                     <button
                         className='navbar-toggler'

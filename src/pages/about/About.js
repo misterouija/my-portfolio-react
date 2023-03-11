@@ -10,7 +10,7 @@ function About() {
     }, []);
     return (
         <section
-            className='about-page py-5 bg-gradient'
+            className='about-page py-5 px-2 bg-gradient'
             data-aos='fade-up'
             data-aos-delay='200'
         >
@@ -67,6 +67,7 @@ function About() {
                             </p>
                         </div>
                     </div>
+                    <hr />
                 </div>
                 <div className='container my-5'>
                     <div className='row'>

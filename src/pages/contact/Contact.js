@@ -18,7 +18,7 @@ const Contact = () => {
     }, []);
     return (
         <section
-            className='contact-page py-5'
+            className='contact-page py-5 px-2'
             data-aos='fade-up'
             data-aos-delay='300'
         >

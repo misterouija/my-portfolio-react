@@ -8,7 +8,7 @@ import './Social.css';
 
 function Social() {
     return (
-        <div>
+        <div className=''>
             <div className='social-links  d-inline-flex gap-2'>
                 <a href='https://github.com/misterouija/'>
                     <BsGithub />
