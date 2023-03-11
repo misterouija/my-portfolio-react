@@ -1,10 +1,9 @@
 function ThanksMessage(props) {
-    console.log(props);
+    //console.log(props);
     return <p className='text-light fs-1'>Your name is: {props.name}</p>;
 }
 
 function Thanks() {
-    //console.log('props');
     return (
         <div
             className='modal fade'
