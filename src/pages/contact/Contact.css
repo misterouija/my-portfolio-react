@@ -33,3 +33,7 @@
     border-bottom: 10px solid #22223b;
     border-radius: 5px;
 }
+
+a.social-button {
+    line-height: 0;
+}
