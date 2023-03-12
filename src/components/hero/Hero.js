@@ -2,10 +2,11 @@ import './Hero.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+// Routing
 import { LinkContainer } from 'react-router-bootstrap';
-import ProfilePhoto from '../../assets/profile.jpg';
 
-//AOS.init();
+// Assets
+import ProfilePhoto from '../../assets/profile.jpg';
 
 const Hero = () => {
     useEffect(() => {

@@ -1,9 +1,15 @@
+//Styles
+import './Header.css';
+
 // Icons
 import { TiThMenu } from 'react-icons/ti';
 import { Social } from '../social/Social';
+
+// Assets
 import Logo from '../../assets/lg-logo.png';
+
+// Routing
 import { LinkContainer } from 'react-router-bootstrap';
-import './Header.css';
 
 const Header = () => {
     return (

@@ -1,4 +1,7 @@
+// Hooks
 import { useState } from 'react';
+
+// Styles
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -28,7 +31,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className='container my-5 border p-5 rounded'>
+        <div className='container my-5 border p-5 rounded contact-form shadow gradient transparent'>
             <h5 className='mb-3'>Contact Form</h5>
             <form onSubmit={onSubmit}>
                 <div className='mb-3'>

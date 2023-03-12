@@ -1,19 +1,32 @@
+// Styles
 import './Projects.css';
-// Projects
+
+// Assests
 import projects from '../../assets/projects.json';
+
+// Components
 import { ProjectCard } from '../../components/projectscard/ProjectCard';
+
+// Libraries
 import AOS from 'aos';
-import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+
+// Hooks
+import { useEffect } from 'react';
 
 const Projects = () => {
     useEffect(() => {
         AOS.init();
     }, []);
+
+    function formatTitle(title) {
+        return title.toLowerCase().split(' ').join('-');
+    }
+
     const myProjects = projects.map((project, index) => {
         return (
             <ProjectCard
-                title={project.title}
+                title={formatTitle(project.title)}
                 img={project.img}
                 sdesc={project.sdesc}
                 desc={project.desc}
@@ -26,7 +39,7 @@ const Projects = () => {
 
     return (
         <section
-            className='projects-page py-5 px-2 bg-gradient'
+            className='projects-page py-md-3 px-2 bg-gradient'
             data-aos='fade-up'
             data-aos-delay='300'
         >
