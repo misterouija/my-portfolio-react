@@ -1,11 +1,16 @@
+// Style
 import './ProjectCard.css';
+
+// Icons
 import { RiExternalLinkFill } from 'react-icons/ri';
+
+// Routing
 import { LinkContainer } from 'react-router-bootstrap';
 
 function ProjectCard(props) {
     return (
         <div className='col'>
-            <div className='card'>
+            <div className='card shadow'>
                 <img
                     src={props.img}
                     className='card-img-top'
@@ -50,7 +55,7 @@ function Details(props) {
             <div>
                 <img
                     src={props.img}
-                    className='border p-0 img-fluid'
+                    className='border p-0 img-fluid shadow rounded'
                     alt={props.title}
                 />
             </div>
@@ -75,6 +80,14 @@ function Details(props) {
                 >
                     Repo <RiExternalLinkFill />
                 </a>
+                <LinkContainer to='/projects'>
+                    <a
+                        href='/projects'
+                        className='btn btn-sm btn-secondary ms-2'
+                    >
+                        Back to Projects
+                    </a>
+                </LinkContainer>
             </div>
         </div>
     );

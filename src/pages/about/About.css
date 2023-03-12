@@ -1,5 +1,5 @@
 .about-page {
     min-height: calc(100vh - 56px);
-    background-color: #f2e9e4;
+    background-color: #e8e7e6;
     background-image: var(--bs-gradient);
 }

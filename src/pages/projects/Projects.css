@@ -1,9 +1,5 @@
 .projects-page {
     min-height: calc(100vh - 56px);
-    background-color: #c9ada7;
+    background-color: #e8e7e6;
     background-image: var(--bs-gradient);
-}
-
-.card {
-    box-shadow: 1px 1px 10px #22223b;
 }

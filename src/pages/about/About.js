@@ -1,7 +1,14 @@
+// Styles
 import './About.css';
-import AOS from 'aos';
+
+// Hooks
 import { useEffect } from 'react';
+
+// Libraries
+import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+// Assets
 import profile from '../../assets/profile.jpg';
 
 function About() {
@@ -10,7 +17,7 @@ function About() {
     }, []);
     return (
         <section
-            className='about-page py-5 px-2 bg-gradient'
+            className='about-page py-md-3 px-2'
             data-aos='fade-up'
             data-aos-delay='200'
         >
@@ -32,9 +39,9 @@ function About() {
                 </div>
                 <div className='container my-5'>
                     <div className='row'>
-                        <div className='col-12 col-md-3 about-img'>
+                        <div className='col-12 col-md-3 about-img text-center'>
                             <img
-                                className='img-fluid'
+                                className='img-fluid rounded'
                                 src={profile}
                                 alt='leighton grant'
                             />
@@ -76,13 +83,18 @@ function About() {
                                 Skills
                             </h2>
                             <p className='intro skills-intro text-center fs-5'>
-                                I have a strong knowledge of HTML, CSS,
-                                JavaScript, React, Bootstrap and other web
-                                technologies. I enjoy working with diverse teams
-                                and collaborating with other developers to
-                                deliver high-quality products that meet the
-                                client's needs and expectations. I am always
-                                eager to learn new skills and explore new
+                                I have a strong knowledge of{' '}
+                                <span className='fw-bolder'>HTML</span>,{' '}
+                                <span className='fw-bolder'>CSS</span>,{' '}
+                                <span className='fw-bolder'>JavaScript</span>,{' '}
+                                <span className='fw-bolder'>React</span>,{' '}
+                                <span className='fw-bolder'>Bootstrap</span>,{' '}
+                                <span className='fw-bolder'>Node.js</span>, and
+                                other popular web technologies. I enjoy working
+                                with diverse teams and collaborating with other
+                                developers to deliver high-quality products that
+                                meet the client's needs and expectations. I am
+                                always eager to learn new skills and explore new
                                 challenges in the field of web development.
                             </p>
                         </div>

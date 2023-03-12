@@ -1,15 +1,26 @@
+// Styles
 import './Contact.css';
+
+// Icons
 import {
     BsEnvelopeFill,
     BsPhoneFill,
     BsFilePdfFill,
     BsDownload,
 } from 'react-icons/bs';
+
+// Libraries
 import AOS from 'aos';
-import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+
+// Hooks
+import { useEffect } from 'react';
+
+// Components
 import ContactForm from '../../components/contactform/ContactForm';
 import { GitHub, LinkedIn } from '../../components/social/Social';
+
+// Assets
 import Cv from '../../assets/leighton-cv.pdf';
 
 const Contact = () => {
@@ -18,7 +29,7 @@ const Contact = () => {
     }, []);
     return (
         <section
-            className='contact-page py-5 px-2'
+            className='contact-page py-md-3 px-2'
             data-aos='fade-up'
             data-aos-delay='300'
         >
@@ -49,7 +60,7 @@ const Contact = () => {
                 <div className='container my-5 contact-info'>
                     <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3  d-flex justify-content-between'>
                         <div className='col'>
-                            <div className='card py-3 '>
+                            <div className='card py-3 shadow'>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
                                         <BsEnvelopeFill />
@@ -68,7 +79,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='col'>
-                            <div className='card py-3 '>
+                            <div className='card py-3 shadow'>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
                                         <BsPhoneFill />
@@ -87,7 +98,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='col'>
-                            <div className='card py-3 '>
+                            <div className='card py-3 shadow'>
                                 <div className='card-body d-flex justify-content-center flex-column align-items-center gap-4'>
                                     <span className='fs-4'>
                                         <BsFilePdfFill />
