@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio-react/static/css/main.c36583b2.css",
-    "main.js": "/my-portfolio-react/static/js/main.719cf486.js",
+    "main.css": "/my-portfolio-react/static/css/main.e0dabfa8.css",
+    "main.js": "/my-portfolio-react/static/js/main.bb7cbb37.js",
     "static/js/787.fe039db8.chunk.js": "/my-portfolio-react/static/js/787.fe039db8.chunk.js",
     "static/media/bg.jpg": "/my-portfolio-react/static/media/bg.91bde94cf40af0b4b61d.jpg",
-    "static/media/contact-bg.jpg": "/my-portfolio-react/static/media/contact-bg.b63455b74b20a03c6aec.jpg",
     "static/media/leighton-cv.pdf": "/my-portfolio-react/static/media/leighton-cv.e911c6520a979f884e25.pdf",
     "static/media/profile.jpg": "/my-portfolio-react/static/media/profile.a5076b1a21d10cb73b41.jpg",
     "index.html": "/my-portfolio-react/index.html",
-    "main.c36583b2.css.map": "/my-portfolio-react/static/css/main.c36583b2.css.map",
-    "main.719cf486.js.map": "/my-portfolio-react/static/js/main.719cf486.js.map",
+    "main.e0dabfa8.css.map": "/my-portfolio-react/static/css/main.e0dabfa8.css.map",
+    "main.bb7cbb37.js.map": "/my-portfolio-react/static/js/main.bb7cbb37.js.map",
     "787.fe039db8.chunk.js.map": "/my-portfolio-react/static/js/787.fe039db8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c36583b2.css",
-    "static/js/main.719cf486.js"
+    "static/css/main.e0dabfa8.css",
+    "static/js/main.bb7cbb37.js"
   ]
 }
