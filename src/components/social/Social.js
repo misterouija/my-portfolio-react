@@ -1,10 +1,13 @@
+// Styles
+import './Social.css';
+
+// Icons
 import {
     BsLinkedin,
     BsGithub,
     BsPhoneFill,
     BsEnvelopeFill,
 } from 'react-icons/bs';
-import './Social.css';
 
 function Social() {
     return (

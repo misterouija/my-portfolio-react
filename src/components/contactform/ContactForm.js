@@ -21,9 +21,11 @@ const ContactForm = () => {
                 formData.name +
                 ". I'll get back to you as soon as possible"
         );
+
         name.value = '';
         email.value = '';
         message.value = '';
+
         setFormStatus('Message sent');
         setTimeout(() => {
             setFormStatus('Send Message');
