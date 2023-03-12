@@ -57,6 +57,7 @@ const Header = () => {
                     </div>
 
                     <Social />
+
                     <button
                         className='navbar-toggler'
                         type='button'
