@@ -15,6 +15,7 @@ import ProjectDetails from './pages/projects/ProjectDetails';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import { Thanks } from './components/modals/Thanks';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/projects/:id' element={<ProjectDetails />} />
+                <Route path='/my-portfolio-react/thanks' element={<Thanks />} />
             </Routes>
             <Footer />
         </>
