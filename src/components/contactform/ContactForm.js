@@ -1,36 +1,54 @@
 // Hooks
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
+import { Thanks } from '../modals/Thanks';
 // Styles
 import './ContactForm.css';
 
 const ContactForm = () => {
     const [formStatus, setFormStatus] = useState('Send Message');
+    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
-        const { name, email, message } = e.target.elements;
-        let formData = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
 
-        alert(
-            'Thanks for you message ' +
-                formData.name +
-                ". I'll get back to you as soon as possible"
-        );
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+        const formDataString = new URLSearchParams(formData).toString();
 
-        name.value = '';
-        email.value = '';
-        message.value = '';
-
-        setFormStatus('Message sent');
-        setTimeout(() => {
-            setFormStatus('Send Message');
-        }, 1000);
+        fetch('127.0.0.1:8080/form', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: formDataString,
+        })
+            .then(() => {
+                fetch('127.0.0.1:8080/form', { method: 'get' }).then((data) =>
+                    console.log(data)
+                );
+                navigate('/thanks');
+            })
+            .catch((error) => alert(error));
     };
+    // const { name, email, message } = e.target.elements;f
+    // let formData = {
+    //     name: name.value,
+    //     email: email.value,
+    //     message: message.value,
+    // };
+
+    // name.value = '';
+    // email.value = '';
+    // message.value = '';
+
+    // navigate('/thanks');
+    // return (
+    //     <Thanks
+    //         name={formData.name}
+    //         email={formData.email}
+    //         message={formData.message}
+    //     />
+    // );
 
     return (
         <div className='container my-5 border p-5 rounded contact-form shadow gradient transparent'>
@@ -44,6 +62,7 @@ const ContactForm = () => {
                         className='form-control'
                         type='text'
                         id='name'
+                        name='name'
                         required
                     />
                 </div>
@@ -55,6 +74,7 @@ const ContactForm = () => {
                         className='form-control'
                         type='email'
                         id='email'
+                        name='email'
                         required
                     />
                 </div>
@@ -62,7 +82,12 @@ const ContactForm = () => {
                     <label className='form-label' htmlFor='message'>
                         Message
                     </label>
-                    <textarea className='form-control' id='message' required />
+                    <textarea
+                        className='form-control'
+                        id='message'
+                        name='message'
+                        required
+                    />
                 </div>
                 <button
                     className='btn form-btn rounded-pill px-4 my-4'
