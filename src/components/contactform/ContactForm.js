@@ -62,6 +62,7 @@ const ContactForm = () => {
                         className='form-control'
                         type='text'
                         id='name'
+                        name='name'
                         required
                     />
                 </div>
@@ -73,6 +74,7 @@ const ContactForm = () => {
                         className='form-control'
                         type='email'
                         id='email'
+                        name='email'
                         required
                     />
                 </div>
@@ -80,7 +82,12 @@ const ContactForm = () => {
                     <label className='form-label' htmlFor='message'>
                         Message
                     </label>
-                    <textarea className='form-control' id='message' required />
+                    <textarea
+                        className='form-control'
+                        id='message'
+                        name='message'
+                        required
+                    />
                 </div>
                 <button
                     className='btn form-btn rounded-pill px-4 my-4'
