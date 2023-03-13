@@ -52,7 +52,6 @@ const ContactForm = () => {
                 // onSubmit={onSubmit}
                 name='contact'
                 method='POST'
-                data-netlify='true'
             >
                 <input type='hidden' name='form-name' value='contact' />
                 <div className='mb-3'>
