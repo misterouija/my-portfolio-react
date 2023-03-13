@@ -27,7 +27,10 @@ function App() {
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/projects/:id' element={<ProjectDetails />} />
-                <Route path='/my-portfolio-react/thanks' element={<Thanks />} />
+                <Route
+                    path='/my-portfolio-react/thankyou'
+                    element={<Thanks />}
+                />
             </Routes>
             <Footer />
         </>
