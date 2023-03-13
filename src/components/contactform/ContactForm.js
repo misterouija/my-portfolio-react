@@ -54,6 +54,7 @@ const ContactForm = () => {
                 method='POST'
                 data-netlify='true'
             >
+                <input type='hidden' name='form-name' value='contact' />
                 <div className='mb-3'>
                     <label className='form-label' htmlFor='name'>
                         Name
