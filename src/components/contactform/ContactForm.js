@@ -31,7 +31,12 @@ const ContactForm = () => {
     return (
         <div className='container my-5 border p-5 rounded contact-form shadow gradient transparent'>
             <h5 className='mb-3'>Contact Form</h5>
-            <form name='contact' method='POST' onSubmit={handleSubmit}>
+            <form
+                name='contact'
+                method='POST'
+                data-netlify='true'
+                onSubmit={handleSubmit}
+            >
                 <input type='hidden' name='form-name' value='contact' />
                 <div className='mb-3'>
                     <label className='form-label' htmlFor='name'>
