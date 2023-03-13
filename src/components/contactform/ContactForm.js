@@ -10,8 +10,22 @@ import { useNavigate } from 'react-router-dom';
 const ContactForm = () => {
     const navigate = useNavigate();
 
-    function handleSubmit() {
-        navigate('/thanks');
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+        const formDataString = new URLSearchParams(formData).toString();
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: formDataString,
+        })
+            .then(() => {
+                navigate('/thanks');
+            })
+            .catch((error) => alert(error));
     }
 
     return (
