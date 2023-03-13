@@ -29,7 +29,7 @@ const Contact = () => {
     }, []);
     return (
         <section
-            className='contact-page py-md-3 px-2'
+            className='contact-page pb-3 py-md-3 px-2'
             data-aos='fade-up'
             data-aos-delay='300'
         >

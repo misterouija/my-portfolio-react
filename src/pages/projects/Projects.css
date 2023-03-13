@@ -1,5 +1,7 @@
 .projects-page {
-    min-height: calc(100vh - 56px);
+    min-height: 100vh;
     background-color: #e8e7e6;
     background-image: var(--bs-gradient);
+    background-size: cover;
+    background-position: center;
 }

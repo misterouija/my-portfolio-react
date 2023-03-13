@@ -1,6 +1,5 @@
 .contact-page {
-    min-height: calc(100vh - 56px);
-    /* background-image: url('../../assets/contact-bg.jpg'); */
+    min-height: 100vh;
     background-image: var(--bs-gradient);
     background-color: #e8e7e6;
     background-position: center;
