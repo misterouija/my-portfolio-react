@@ -1,41 +1,59 @@
 // Hooks
-import { useState } from 'react';
+// import { useState } from 'react';
 
 // Styles
 import './ContactForm.css';
 
 const ContactForm = () => {
-    const [formStatus, setFormStatus] = useState('Send Message');
+    // const [formStatus, setFormStatus] = useState('Send Message');
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        const { name, email, message } = e.target.elements;
-        let formData = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
+    // const onSubmit = (e) => {
+    //     e.preventDefault();
 
-        alert(
-            'Thanks for you message ' +
-                formData.name +
-                ". I'll get back to you as soon as possible"
-        );
+    //     const myForm = e.target;
+    //     const formData = new FormData(myForm);
 
-        name.value = '';
-        email.value = '';
-        message.value = '';
+    //     fetch('/', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //         body: new URLSearchParams(formData).toString(),
+    //     })
+    //         .then(() => console.log('Form successfully submitted'))
+    //         .catch((error) => alert(error));
 
-        setFormStatus('Message sent');
-        setTimeout(() => {
-            setFormStatus('Send Message');
-        }, 1000);
-    };
+    //     // const { name, email, message } = e.target.elements;
+
+    //     // let formData = {
+    //     //     name: name.value,
+    //     //     email: email.value,
+    //     //     message: message.value,
+    //     // };
+
+    //     // alert(
+    //     //     'Thanks for you message ' +
+    //     //         formData.name +
+    //     //         ". I'll get back to you as soon as possible"
+    //     // );
+
+    //     // name.value = '';
+    //     // email.value = '';
+    //     // message.value = '';
+
+    //     // setFormStatus('Message sent');
+    //     // setTimeout(() => {
+    //     //     setFormStatus('Send Message');
+    //     // }, 1000);
+    // };
 
     return (
         <div className='container my-5 border p-5 rounded contact-form shadow gradient transparent'>
             <h5 className='mb-3'>Contact Form</h5>
-            <form onSubmit={onSubmit}>
+            <form
+                // onSubmit={onSubmit}
+                name='contact'
+                method='POST'
+                data-netlify='true'
+            >
                 <div className='mb-3'>
                     <label className='form-label' htmlFor='name'>
                         Name
@@ -67,10 +85,9 @@ const ContactForm = () => {
                 <button
                     className='btn form-btn rounded-pill px-4 my-4'
                     type='submit'
-                    // data-bs-toggle='modal'
-                    // data-bs-target='#thanksModal'
                 >
-                    {formStatus}
+                    Submit
+                    {/* {formStatus} */}
                 </button>
             </form>
         </div>
