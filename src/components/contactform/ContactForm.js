@@ -1,59 +1,37 @@
 // Hooks
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Thanks } from '../modals/Thanks';
 // Styles
 import './ContactForm.css';
 
+// Icons
+import { IoSend } from 'react-icons/io5';
+
 const ContactForm = () => {
-    const [formStatus, setFormStatus] = useState('Send Message');
     const navigate = useNavigate();
 
-    const onSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         const myForm = e.target;
         const formData = new FormData(myForm);
         const formDataString = new URLSearchParams(formData).toString();
 
-        fetch('127.0.0.1:8080/form', {
+        fetch('https://www.formbackend.com/f/75e66f7945b56004', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: formDataString,
         })
             .then(() => {
-                fetch('127.0.0.1:8080/form', { method: 'get' }).then((data) =>
-                    console.log(data)
-                );
                 navigate('/thanks');
             })
             .catch((error) => alert(error));
     };
-    // const { name, email, message } = e.target.elements;f
-    // let formData = {
-    //     name: name.value,
-    //     email: email.value,
-    //     message: message.value,
-    // };
-
-    // name.value = '';
-    // email.value = '';
-    // message.value = '';
-
-    // navigate('/thanks');
-    // return (
-    //     <Thanks
-    //         name={formData.name}
-    //         email={formData.email}
-    //         message={formData.message}
-    //     />
-    // );
 
     return (
         <div className='container my-5 border p-5 rounded contact-form shadow gradient transparent'>
             <h5 className='mb-3'>Contact Form</h5>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div className='mb-3'>
                     <label className='form-label' htmlFor='name'>
                         Name
@@ -92,10 +70,8 @@ const ContactForm = () => {
                 <button
                     className='btn form-btn rounded-pill px-4 my-4'
                     type='submit'
-                    // data-bs-toggle='modal'
-                    // data-bs-target='#thanksModal'
                 >
-                    {formStatus}
+                    Send Message <IoSend />
                 </button>
             </form>
         </div>
